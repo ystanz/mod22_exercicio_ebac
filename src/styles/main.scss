@@ -1,4 +1,8 @@
 @use 'hero';
+@use 'event';
+@use 'variables';
+@use 'components/info-bar';
+@use 'components/buttons';
 
 * {
     padding: 0;
@@ -6,6 +10,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: Roboto, 'sans serif';
+    overflow-x: hidden;
 }
 
 .container {

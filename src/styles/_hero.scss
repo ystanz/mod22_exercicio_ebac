@@ -1,7 +1,82 @@
 .hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    &__gif-hero {
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__confetti {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__finger {
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+        width: 80px;
+        transition: all .5s ease;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
+    .container {
+        position: relative;
+    }
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .7;
+    }
 
     &__text {
+        margin: 55px 0;
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 56px;
         text-align: center;
-        font-size: 2rem;
+        color: #fff;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__gif-hero {
+            height: 150px;
+        }
+
+        &__finger {
+            bottom: 5%;
+            right: 0;
+            width: 50px;
+            transform: rotate(-90deg);
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            margin: 24px 0;
+        }
+
+        span {
+            font-size: 2rem;
+        }
     }
 }

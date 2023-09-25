@@ -25,3 +25,12 @@ const countsTime = setInterval(function() {
         timer.innerHTML = "Agora já passou, até ano que vem! ;P"
     }
 }, 1000)
+
+const confirmButton = document.querySelector('.button--primary');
+
+confirmButton.addEventListener('mouseover', function () {
+    confirmButton.innerHTML = "BORAAA !!!";
+})
+confirmButton.addEventListener('mouseout', function () {
+    confirmButton.innerHTML = "Só falar bora que eu boro !";
+})

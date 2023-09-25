@@ -1,0 +1,33 @@
+@use '../variables.scss';
+
+.button {
+    padding: .7rem;
+    width: 250px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--primary {
+        color: #fff;
+        background-color: variables.$buttonPrimary;
+        text-decoration: none;
+        transition: all .3s ease;
+        &:hover {
+            background-color: variables.$buttonSecondary;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

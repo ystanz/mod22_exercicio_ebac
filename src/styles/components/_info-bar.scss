@@ -1,0 +1,42 @@
+.info-bar {
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__infos {
+        display: flex;
+        gap: 2.5rem;
+
+        &__item {
+            font-size: .9rem;
+            b {
+                font-size: 1.05rem;
+                display: block;
+            }
+            small {
+                font-size: .6rem;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 1rem;
+        }
+    }
+}
