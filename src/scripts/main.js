@@ -1,3 +1,5 @@
+AOS.init();
+
 const eventDate = new Date("Nov 19, 2023 19:00:00");
 const timeStempEvent = eventDate.getTime();
 
@@ -29,7 +31,7 @@ const countsTime = setInterval(function() {
 const confirmButton = document.querySelector('.button--primary');
 
 confirmButton.addEventListener('mouseover', function () {
-    confirmButton.innerHTML = "BORAAA !!!";
+    confirmButton.innerHTML = "BORAAA !!! &#129321;";
 })
 confirmButton.addEventListener('mouseout', function () {
     confirmButton.innerHTML = "Só falar bora que eu boro !";

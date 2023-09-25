@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Convite de Aniversário</title>
+    <link rel="icon" href="./images/cupcake.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
@@ -36,8 +38,8 @@
         <img class="hero__finger" src="./images/finger.gif" alt="">
     </header>
     <section class="event event--about">
-        <div class="container">
-            <img class="event__clouds" src="./images/clouds4.gif" alt="">
+        <img class="event__clouds" src="./images/clouds4.gif" alt="Nuvens">
+        <div class="container" data-aos="fade-down">
             <div class="event__details">
                 <h2 class="event__details__title">Sobre o evento</h2>
                 <p class="event__details__description">
@@ -48,9 +50,9 @@
         </div>
     </section>
     <section class="event event--location event--image-left">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="event__details">
-                <h2 class="event__details__title">Localização</h2>
+                <h2 class="event__details__title">Sobre o local</h2>
                 <p class="event__details__description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptas iusto culpa modi pariatur et ut perspiciatis perferendis quasi libero consequuntur qui error, est mollitia? Sed reiciendis aspernatur quae earum.
                 </p>
@@ -59,7 +61,7 @@
         </div>
     </section>
     <section class="event event--how-we-go">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="event__details">
                 <h2 class="event__details__title">Como nós vamos</h2>
                 <p class="event__details__description">
@@ -70,8 +72,7 @@
         </div>
     </section>
     <section class="event event--what-to-bring event--image-left">
-        <div class="container">
-            <img class="event__ocean-waves" src="./images/ocean-waves2.gif" alt="">
+        <div class="container" data-aos="fade-left">
             <div class="event__details">
                 <h2 class="event__details__title">O que trazer</h2>
                 <p class="event__details__description">
@@ -80,7 +81,9 @@
             </div>
             <img class="event__image" src="./images/cat-baggage.gif" alt="">
         </div>
+        <img class="event__ocean-waves" src="./images/ocean-waves2.gif" alt="">
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
